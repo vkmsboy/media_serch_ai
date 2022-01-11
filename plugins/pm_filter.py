@@ -276,7 +276,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('Movie Group', url='https://t.me/chat_room_y')
                 ]
                 ]
-            await query.message.edit(text="<b>Owner : <a href='https://t.me/Only_q'>Only q</a>\n\nMovie Group : <a href='https://t.me/chat_room_y'>Click here</a>\n\nMᴇᴀɴ Cʜᴀɴɴᴇʟ : <a href='https://t.me/Hindi_world_series'>𝐇𝐢𝐧𝐝𝐢 𝐰𝐨𝐫𝐥𝐝 𝐬𝐞𝐫𝐢𝐞𝐬</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>Owner</b> : <a href='https://t.me/Hidden_Boy_i'>Only q</a>\n\n<b>Movie Group </b>: <a href='https://t.me/chat_room_y'>Click here</a>\n\n<b>Mᴇᴀɴ Cʜᴀɴɴᴇʟ </b> : <a href='https://t.me/Hindi_world_series'>𝐇𝐢𝐧𝐝𝐢 𝐰𝐨𝐫𝐥𝐝 𝐬𝐞𝐫𝐢𝐞𝐬</a> ", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
