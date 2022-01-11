@@ -196,4 +196,4 @@ async def bot_info(bot, message):
             InlineKeyboardButton('Movie Group', url='https://t.me/Chat_room_y')
         ]
         ]
-    await message.reply(text="<b>Owner : <a href='https://t.me/Only_q'>Only q</a>\nMovie Group : <a href='https://t.me/Chat_room_y'>Click here</a>\nMᴇᴀɴ Cʜᴀɴɴᴇʟ : <a href='https://t.me/Hindi_world_series'>𝐇𝐢𝐧𝐝𝐢 𝐰𝐨𝐫𝐥𝐝 𝐬𝐞𝐫𝐢𝐞𝐬</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>Owner : <a href='https://t.me/Hidden_Boy_i'>Only q</a>\nMovie Group : <a href='https://t.me/Chat_room_y'>Click here</a>\nMᴇᴀɴ Cʜᴀɴɴᴇʟ : <a href='https://t.me/Hindi_world_series'>𝐇𝐢𝐧𝐝𝐢 𝐰𝐨𝐫𝐥𝐝 𝐬𝐞𝐫𝐢𝐞𝐬</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
