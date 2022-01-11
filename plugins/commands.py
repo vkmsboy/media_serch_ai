@@ -27,11 +27,11 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="**Please Join My Updates Channel to use this Bot!**",
+                    text="**Please Join My Mean Channel to use this Bot!**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                                InlineKeyboardButton("🤖 Join Mean Channel", url=invite_link.invite_link)
                             ],
                             [
                                 InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{file_id}")
@@ -67,7 +67,7 @@ async def start(bot, cmd):
                 buttons = [
                     [
                         InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122')
+                        InlineKeyboardButton('Mean Channel', url='https://t.me/Hindi_world_series')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -86,7 +86,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                        InlineKeyboardButton("🤖 Join Mean Channel", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -100,7 +100,7 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Other Bots", url="https://t.me/subin_works/122")
+                        InlineKeyboardButton("Mean Channel", url="https://t.me/Hindi_world_series")
                     ],
                     [
                         InlineKeyboardButton("About", callback_data="about")
@@ -192,8 +192,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/subin_works'),
-            InlineKeyboardButton('Source Code', url='https://github.com/subinps/Media-Search-bot')
+            InlineKeyboardButton('Mean Channel', url='https://t.me/Hindi_world_seties'),
+            InlineKeyboardButton('Movie Group', url='https://t.me/Chat_room_y')
         ]
         ]
-    await message.reply(text="<b>Developer : <a href='https://t.me/subinps_bot'>SUBIN</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\nUpdate Channel : <a href='https://t.me/subin_works'>XTZ Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>Owner : <a href='https://t.me/Only_q'>Only q</a>\nMovie Group : <a href='https://t.me/Chat_room_y'>Click here</a>\nMᴇᴀɴ Cʜᴀɴɴᴇʟ : <a href='https://t.me/Hindi_world_series'>𝐇𝐢𝐧𝐝𝐢 𝐰𝐨𝐫𝐥𝐝 𝐬𝐞𝐫𝐢𝐞𝐬</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
