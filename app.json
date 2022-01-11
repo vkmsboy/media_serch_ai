@@ -15,7 +15,7 @@
       "inline"
     ],
     "website": "https://github.com/subinps/Media-Search-bot",
-    "repository": "https://github.com/VaishnavMS/Media-Search-bot",
+    "repository": "https://github.com/vkmsboy/media_serch_ai",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
