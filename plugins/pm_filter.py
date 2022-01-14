@@ -111,11 +111,11 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        nyva=BOT.get("@Pro_Movie_Search_q_bot")
+        nyva=BOT.get("Username")
         if not nyva:
             botusername=await client.get_me()
             nyva=botusername.username
-            BOT["@Pro_Movie_Search_q_bot"]=nyva
+            BOT["Username"]=nyva
         files = await get_filter_results(query=search)
         if files:
             for file in files:
