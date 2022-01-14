@@ -26,11 +26,11 @@ async def filter(client, message):
         except UserNotParticipant:
             await client.send_message(
                 chat_id=message.from_user.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="**Please Join My Mean Channel to use this Bot!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                            InlineKeyboardButton("🤖 Join Mean Channel", url=invite_link.invite_link)
                         ]
                     ]
                 ),
@@ -122,7 +122,7 @@ async def group(client, message):
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}")]
+                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/Pro_Movie_Search_q_bot?start=subinps_-_-_-_{file_id}")]
                 )
         else:
             return
@@ -272,11 +272,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='https://t.me/subin_works'),
-                    InlineKeyboardButton('Source Code', url='https://github.com/subinps/Media-Search-bot')
+            InlineKeyboardButton('Mean Channel', url='https://t.me/Hindi_world_seties'),
+            InlineKeyboardButton('Movie Group', url='https://t.me/Chat_room_y')
                 ]
                 ]
-            await query.message.edit(text="<b>Developer : <a href='https://t.me/subinps_bot'>SUBIN</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\nUpdate Channel : <a href='https://t.me/subin_works'>XTZ Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>Owner : <a href='https://t.me/Hidden_Boy_i'>Only q</a>\nMovie Group : <a href='https://t.me/Chat_room_y'>Click here</a>\nMᴇᴀɴ Cʜᴀɴɴᴇʟ : <a href='https://t.me/Hindi_world_series'>𝐇𝐢𝐧𝐝𝐢 𝐰𝐨𝐫𝐥𝐝 𝐬𝐞𝐫𝐢𝐞𝐬</a>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
@@ -297,8 +297,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122'),
-                        InlineKeyboardButton('Update Channel', url='https://t.me/subin_works')
+            InlineKeyboardButton('Mean Channel', url='https://t.me/Hindi_world_seties'),
+            InlineKeyboardButton('Movie Group', url='https://t.me/Chat_room_y')
                     ]
                     ]
                 
@@ -329,8 +329,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122'),
-                        InlineKeyboardButton('Update Channel', url='https://t.me/subin_works')
+            InlineKeyboardButton('Mean Channel', url='https://t.me/Hindi_world_seties'),
+            InlineKeyboardButton('Movie Group', url='https://t.me/Chat_room_y')
                     ]
                     ]
                 
