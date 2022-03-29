@@ -7,18 +7,26 @@ from pyrogram.errors import UserNotParticipant
 from utils import get_filter_results, get_file_details, is_subscribed, get_poster
 BUTTONS = {}
 BOT = {}
+BITLY_TOKEN = "391215c03f94031c4c4a47793efd046778e24027"
+
+headers = {
+    'Authorization': BITLY_TOKEN,
+    'Content-Type': 'application/json',
+}
+
 @Client.on_message(filters.text & filters.private & filters.incoming & filters.user(AUTH_USERS) if AUTH_USERS else filters.text & filters.private & filters.incoming & filters.regex("http|https"))
 async def filter(client, message):
-  DOMAIN = "bit.ly"
-  value  = {'long_url': URL , 'domain': DOMAIN}
-  data = json.dumps(value)
-  try:
-    r = requests.post('https://api-ssl.bitly.com/v4/shorten', headers=headers,data = data )
-    result = r.json()
-    link = result["link"]
-    await message.reply_text(f"```{link}```", reply_to_message_id= message.message_id)
-  except Exception as e :
-    await message.reply_text(e)
+      
+      DOMAIN = "bit.ly"
+      value  = {'long_url': URL , 'domain': DOMAIN}
+      data = json.dumps(value)
+      try: 
+        r = requests.post('https://api-ssl.bitly.com/v4/shorten', headers=headers,data = data ) 
+        result = r.json() 
+        link = result["link"] 
+        await message.reply_text(f"```{link}```", reply_to_message_id= message.message_id) 
+      except Exception as e : 
+        await message.reply_text(e)
     
     if message.text.startswith("/"):
         return
@@ -65,10 +73,10 @@ async def filter(client, message):
         if files:
             for file in files:
                 file_id = file.file_id
-                 URL = message.text
+                URL = f"https://telegram.dog/Pro_Movie_Search_q_bot?start=subinps_-_-_-_{file_id}"
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
+                    [InlineKeyboardButton(text=f"{filename}", url=f"{filename} + {link}")]
                     )
         else:
             await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
